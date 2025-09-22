@@ -14,20 +14,6 @@ Users can **upload images of plants** and interact with an **AI-powered chat ass
 
 ---
 
-## 📂 Project Structure
-oryza/
-├── public/ # Static assets
-├── src/ # React + Tailwind code
-│ ├── components/ # UI components (chat, uploader, etc.)
-│ ├── lib/ # API and helper functions
-│ └── pages/ # Main views
-├── .env # Environment variables (not committed)
-├── index.html
-└── vite.config.js
-
-yaml
----
-
 ## 🔑 Environment Variables
 
 You must create a **`.env`** file in the **root of the project** before running locally.  
