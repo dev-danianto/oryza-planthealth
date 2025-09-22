@@ -1,12 +1,80 @@
-# React + Vite
+# 🌾 Oryza – AI Assisted Plant Health Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Oryza is a **progressive web application (PWA)** that helps farmers, researchers, and plant enthusiasts check the **health of plants using AI**.  
+Users can **upload images of plants** and interact with an **AI-powered chat assistant** to receive insights, guidance, and possible solutions for plant diseases or deficiencies.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 📷 **Image Input** – Upload or capture a plant image for health analysis.
+- 🤖 **AI-Assisted Diagnosis** – Get real-time feedback on plant conditions.
+- 💬 **Chat Interface** – Ask questions and receive contextual AI responses.
+- 📱 **PWA Support** – Works on web, desktop (via wrapper), and mobile devices.
+- ⚡ **Powered by OpenRouter** – Flexible AI model integration.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+oryza/
+├── public/ # Static assets
+├── src/ # React + Tailwind code
+│ ├── components/ # UI components (chat, uploader, etc.)
+│ ├── lib/ # API and helper functions
+│ └── pages/ # Main views
+├── .env # Environment variables (not committed)
+├── index.html
+└── vite.config.js
+
+yaml
+Salin kode
+
+---
+
+## 🔑 Environment Variables
+
+You must create a **`.env`** file in the **root of the project** before running locally.  
+
+```env
+VITE_OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+VITE_OPENROUTER_MODEL=mistralai/mistral-small-3.2-24b-instruct:free
+VITE_OPENROUTER_API_KEY=   # for local dev only
+VITE_APP_TITLE=OpenRouter AI PWA
+VITE_APP_REFERER=http://localhost:5173
+⚠️ Important:
+
+Never expose your real API key in public repositories.
+
+For production, use a secure environment variable manager (e.g., Vercel, Netlify, Docker secrets).
+
+🚀 Getting Started
+1. Clone the repo
+bash
+Salin kode
+git clone https://github.com/yourusername/oryza.git
+cd oryza
+2. Install dependencies
+bash
+Salin kode
+npm install
+3. Setup environment variables
+Create .env file as described above.
+
+4. Run development server
+bash
+Salin kode
+npm run dev
+5. Build for production
+bash
+Salin kode
+npm run build
+🛠️ Tech Stack
+Frontend: React + Tailwind CSS
+
+Bundler: Vite
+
+AI Provider: OpenRouter API
+
+PWA Support: Service workers + manifest
+
+Animation: Framer Motion
+
