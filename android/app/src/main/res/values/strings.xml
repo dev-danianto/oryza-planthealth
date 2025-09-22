@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ORYZA</string>
+    <string name="title_activity_main">ORYZA</string>
+    <string name="package_name">com.yourcompany.oryza</string>
+    <string name="custom_url_scheme">com.yourcompany.oryza</string>
+</resources>
