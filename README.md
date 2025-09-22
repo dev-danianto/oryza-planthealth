@@ -24,6 +24,7 @@ VITE_OPENROUTER_MODEL=mistralai/mistral-small-3.2-24b-instruct:free
 VITE_OPENROUTER_API_KEY=   # for local dev only
 VITE_APP_TITLE=OpenRouter AI PWA
 VITE_APP_REFERER=http://localhost:5173
+```
 ⚠️ Important:
 
 Never expose your real API key in public repositories.
