@@ -26,8 +26,6 @@ oryza/
 └── vite.config.js
 
 yaml
-Salin kode
-
 ---
 
 ## 🔑 Environment Variables
