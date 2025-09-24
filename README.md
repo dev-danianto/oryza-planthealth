@@ -35,7 +35,7 @@ For production, use a secure environment variable manager (e.g., Vercel, Netlify
 1. Clone the repo
 bash
 Salin kode
-git clone https://github.com/yourusername/oryza.git
+git clone https://github.com/dev-danianto/oryza-planthealth.git
 cd oryza
 2. Install dependencies
 bash
